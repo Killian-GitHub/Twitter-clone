@@ -15,7 +15,7 @@ function TweetBox() {
       <form>
         <div className="tweetBox__left">
           <img
-            className="tweetBox__image"
+            className="tweetBox__avatar"
             src="https://via.placeholder.com/150"
             alt="User"
           />

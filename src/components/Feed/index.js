@@ -1,5 +1,6 @@
 import React from 'react'
 import TweetBox from '../TweetBox'
+import Post from '../Post'
 
 import './style.css'
 
@@ -10,41 +11,7 @@ function Feed() {
         <h2 className="feed__header__title">Home</h2>
       </div>
       <TweetBox />
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
-      <p>ABCDEFG</p>
+      <Post />
     </div>
   )
 }
