@@ -1,0 +1,87 @@
+.tweetBox {
+  border-bottom: 2px solid var(--border-color);
+  padding: 10px;
+}
+
+.tweetBox > form {
+  display: flex;
+}
+
+.tweetBox__left {
+  width: max-content;
+}
+
+.tweetBox__right {
+  width: 100%;
+}
+
+.tweetBox__image {
+  border-radius: 50px;
+  height: 50px;
+  margin: 0 10px;
+  object-fit: cover;
+  width: 50px;
+}
+
+.tweetBox__input {
+  border-bottom: 2px solid var(--border-color);
+  padding: 15px 0;
+}
+
+.tweetBox__input > input {
+  border: none;
+  font-size: 20px;
+  height: 20px;
+  outline: none;
+}
+
+.tweetBox__input > input::placeholder {
+  color: rgb(86, 99, 112);
+  font-size: 20px;
+}
+
+.tweetBox__submit {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0 2px;
+}
+
+.tweetBox__submit__option__icon:nth-child(5) {
+  font-size: 21px !important;
+}
+
+.tweetBox__submit__option__icon:nth-child(2) {
+  opacity: 1;
+}
+
+.tweetBox__submit__option__icon {
+  background-color: inherit;
+  border-radius: 30px;
+  color: var(--twitter-color);
+  cursor: pointer;
+  font-size: 22px !important;
+  opacity: 0.4;
+  padding: 8px;
+}
+
+.tweetBox__submit__option__icon:hover {
+  background-color: rgb(237, 245, 253);
+  transition: 100ms ease-out;
+}
+
+.tweetBox__submit__button {
+  background-color: var(--twitter-color);
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 10px;
+  padding: 5px 18px;
+}
+
+.tweetBox__submit__button:hover {
+  background-color: rgb(66, 138, 210);
+  transition: 100ms ease-out;
+}

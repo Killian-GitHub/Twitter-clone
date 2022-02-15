@@ -1,8 +1,22 @@
 .sidebar {
+  border-right: 2px solid var(--border-color);
+  padding: 2px 10px;
+  width: 270px;
 }
 
 .sidebar__icon {
+  background-color: inherit;
+  border: none;
+  border-radius: 50px;
   color: var(--twitter-color);
+  cursor: pointer;
+  font-size: 28px !important;
+  padding: 15px;
+}
+
+.sidebar__icon:hover {
+  background-color: rgb(237, 245, 253);
+  transition: 100ms ease-out;
 }
 
 .sidebar__button {
@@ -13,12 +27,12 @@
   cursor: pointer;
   font-size: 18px;
   font-weight: 800;
-  height: 55px;
-  margin-top: 20px;
-  transition: background-color 100ms ease-out;
+  height: 54px;
+  margin: 14px 0;
   width: 90%;
 }
 
 .sidebar__button:hover {
   background-color: rgb(66, 138, 210);
+  transition: 100ms ease-out;
 }

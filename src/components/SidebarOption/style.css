@@ -1,13 +1,13 @@
 .sidebarOption {
   align-items: center;
+  border-radius: 30px;
   cursor: pointer;
   display: flex;
 }
 
 .sidebarOption:hover {
   background-color: #e7e7e8;
-  border-radius: 30px;
-  transition: background-color 100ms ease-out;
+  transition: 100ms ease-out;
 }
 
 .sidebarOption--active > .sidebarOption__text {
@@ -15,11 +15,12 @@
 }
 
 .sidebarOption__icon {
-  padding: 20px;
+  padding: 12px;
+  font-size: 28px !important;
 }
 
 .sidebarOption__text {
   font-weight: 500;
   font-size: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
 }
