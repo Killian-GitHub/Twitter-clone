@@ -1,8 +1,12 @@
 .post {
   align-items: flex-start;
   border-bottom: 2px solid var(--border-color);
+  cursor: pointer;
   display: flex;
-  padding-bottom: 10px;
+}
+
+.post:hover {
+  background-color: var(--linkHover-color);
 }
 
 .post__avatar > img {
@@ -19,6 +23,15 @@
   position: relative;
 }
 
+.post__body > h3 > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post__body > h3 > a:hover {
+  text-decoration: underline;
+}
+
 .post__body__option {
   border-radius: 50px;
   color: gray;
@@ -31,37 +44,32 @@
 .post__body__option:hover {
   background-color: rgba(94, 164, 234, 0.151);
   color: rgb(94, 163, 234);
+  cursor: pointer;
   transition: all 100ms ease-out;
 }
 
-.post__body__header {
+.post__body__user {
+  font-weight: 500;
+  color: var(--textGrey-color);
 }
 
-.post__body__header__information {
-}
-
-.post__body__header__information__user {
-  font-size: 15px;
-  font-weight: 600;
-  color: grey;
-}
-
-.post__body__header__information__badge {
+.post__body__badge {
   color: var(--twitter-color);
   font-size: 20px !important;
   margin: 0 4px;
   vertical-align: bottom;
 }
 
-.post__body__header__text {
+.post__body__text {
   font-size: 15px;
   margin-bottom: 10px;
 }
 
 .post__body > img {
   border-radius: 15px;
+  max-height: 600px;
+  max-width: 100%;
   object-fit: cover;
-  width: 100%;
 }
 
 .post__body__footer {
@@ -73,7 +81,7 @@
 
 .post__body__footer__icon {
   border-radius: 50px;
-  color: grey;
+  color: var(--textGrey-color);
   cursor: pointer;
   font-size: 20px !important;
   padding: 8px;

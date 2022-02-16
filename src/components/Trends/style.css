@@ -1,0 +1,34 @@
+.trends {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+.trends:hover {
+  background-color: var(--linkHover-color);
+  transition: background-color 100ms ease-out;
+}
+
+.trends__header {
+  margin-left: 18px;
+}
+
+.trends__category {
+  color: var(--textGrey-color);
+  font-size: 13px;
+  margin-top: 0;
+  padding-top: 8px;
+}
+
+.trends__title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 3px 0;
+}
+
+.trends__tweets {
+  color: var(--textGrey-color);
+  font-size: 13px;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+}
