@@ -13,25 +13,21 @@ function Post({ avatar, displayName, userName, verified, text, image }) {
   return (
     <div className="post">
       <div className="post__avatar">
-        <img src="https://via.placeholder.com/150" alt="Avatar" />
+        <img src={avatar} alt="Avatar" />
       </div>
       <div className="post__body">
         <MoreHorizIcon className="post__body__option" />
         <h3>
-          <a href="/">awwwards.</a>
+          <a href="/">{displayName}</a>
           <span className="post__body__user">
-            <VerifiedRoundedIcon className="post__body__badge" />
-            @awwwards
+            {verified && <VerifiedRoundedIcon className="post__body__badge" />}@
+            {userName}
           </span>
         </h3>
         <div className="post__body__text">
-          <p>
-            I wish I had known about this a couple years ago: A really detailed,
-            interactive diagram of WebGL’s internal, global state object, where
-            you can see how each WebGL API call affects said object.
-          </p>
+          <p>{text}</p>
         </div>
-        <img src="https://via.placeholder.com/400" alt="" />
+        <img src={image} alt="" />
         <div className="post__body__footer">
           <ChatBubbleOutlineOutlinedIcon className="post__body__footer__icon" />
           <RepeatOutlinedIcon className="post__body__footer__icon" />

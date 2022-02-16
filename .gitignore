@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+.prettierrc
+firebase.js
 
 # testing
 /coverage
