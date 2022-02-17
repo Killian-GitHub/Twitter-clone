@@ -26,3 +26,12 @@
   font-size: 20px;
   margin-left: 10px;
 }
+
+@media screen and (max-width: 1275px) {
+  .sidebarOption__icon {
+    padding: 15px;
+  }
+  .sidebarOption__text {
+    display: none;
+  }
+}

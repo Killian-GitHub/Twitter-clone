@@ -79,6 +79,7 @@
 .widgets__trends__header__icon {
   border-radius: 50px;
   color: #000000;
+  cursor: pointer;
   font-size: 20px !important;
   padding: 8px;
   position: absolute;
@@ -94,8 +95,8 @@
 .widgets__trends__more {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  display: block;
   color: var(--twitter-color);
+  cursor: pointer;
   font-size: 15px;
   padding: 18px;
   text-decoration: none;

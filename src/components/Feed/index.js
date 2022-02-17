@@ -3,6 +3,8 @@ import TweetBox from '../TweetBox'
 import Post from '../Post'
 import db from '../../firebase'
 
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome'
+
 import './style.css'
 
 function Feed() {
@@ -18,6 +20,7 @@ function Feed() {
     <div className="feed">
       <div className="feed__header">
         <h2 className="feed__header__title">Home</h2>
+        <AutoAwesomeIcon className="feed__header__icon" />
       </div>
       <TweetBox />
       {posts.map((post) => (

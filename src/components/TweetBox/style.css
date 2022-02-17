@@ -23,21 +23,37 @@
   width: 50px;
 }
 
-.tweetBox__input {
+.tweetBox__input__message {
   border-bottom: 2px solid var(--border-color);
+  width: 98%;
   padding: 15px 0;
 }
 
-.tweetBox__input > input {
+.tweetBox__input__message > input {
   border: none;
   font-size: 20px;
   height: 20px;
   outline: none;
+  width: 100%;
 }
 
-.tweetBox__input > input::placeholder {
+.tweetBox__input__message > input::placeholder {
   color: var(--textGrey-color);
   font-size: 20px;
+}
+
+.tweetBox__input__image {
+  border: none;
+  font-size: 18px;
+  height: 20px;
+  margin-top: 15px;
+  outline: none;
+  width: 98%;
+}
+
+.tweetBox__input__image::placeholder {
+  color: var(--textGrey-color);
+  font-size: 18px;
 }
 
 .tweetBox__submit {

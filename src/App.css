@@ -8,6 +8,7 @@ body {
 .App {
   display: flex;
   height: 100vh;
+  justify-content: center;
   margin: auto;
   max-width: 1300px;
 }

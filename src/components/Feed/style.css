@@ -1,9 +1,7 @@
 .feed {
   border-right: 2px solid var(--border-color);
-  /* max-width: 600px; */
-  /* min-width: fit-content; */
+  max-width: 600px;
   overflow-x: scroll;
-  width: 600px;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -14,8 +12,11 @@
 }
 
 .feed__header {
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.95);
-  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -24,4 +25,16 @@
 .feed__header__title {
   font-size: 20px;
   font-weight: 700;
+}
+
+.feed__header__icon {
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px !important;
+  padding: 8px;
+}
+
+.feed__header__icon:hover {
+  background-color: var(--linkHover-color);
+  transition: background-color 100ms ease-out;
 }

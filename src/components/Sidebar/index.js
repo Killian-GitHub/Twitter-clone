@@ -10,6 +10,7 @@ import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
 import ListAltIcon from '@mui/icons-material/ListAlt'
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
+import ModeEditIcon from '@mui/icons-material/ModeEdit'
 
 import './style.css'
 
@@ -25,7 +26,10 @@ function Sidebar() {
       <SidebarOption text="Lists" Icon={ListAltIcon} />
       <SidebarOption text="Profile" Icon={PersonOutlineIcon} />
       <SidebarOption text="More" Icon={MoreHorizIcon} />
-      <button className="sidebar__button">Tweet</button>
+      <button className="sidebar__button">
+        <p className="sidebar__button__large">Tweet</p>
+        <ModeEditIcon className="sidebar__button__small" />
+      </button>
     </div>
   )
 }

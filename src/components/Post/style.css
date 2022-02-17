@@ -3,10 +3,11 @@
   border-bottom: 2px solid var(--border-color);
   cursor: pointer;
   display: flex;
+  position: relative;
 }
 
 .post:hover {
-  background-color: var(--linkHover-color);
+  /* background-color: var(--linkHover-color); */
 }
 
 .post__avatar > img {
@@ -46,6 +47,35 @@
   color: rgb(94, 163, 234);
   cursor: pointer;
   transition: all 100ms ease-out;
+}
+
+.post__body__modal {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px lightgrey;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  width: 300px;
+  z-index: 100;
+}
+
+.post__body__modal > li {
+  align-items: center;
+  display: flex;
+  height: 55px;
+}
+
+.post__body__modal > li:hover {
+  background-color: var(--linkHover-color);
+}
+
+.post__body__modal > li > .MuiSvgIcon-root {
+  color: var(--textGrey-color);
+  font-size: 20px !important;
+  margin: 0 12px;
 }
 
 .post__body__user {

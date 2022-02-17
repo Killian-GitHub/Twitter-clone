@@ -1,6 +1,7 @@
 .trends {
   color: inherit;
   display: block;
+  position: relative;
   text-decoration: none;
 }
 
@@ -31,4 +32,20 @@
   font-size: 13px;
   margin-bottom: 0;
   padding-bottom: 8px;
+}
+
+.trends__option {
+  border-radius: 50px;
+  color: var(--textGrey-color);
+  padding: 5px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.trends__option:hover {
+  background-color: rgba(94, 164, 234, 0.151);
+  color: rgb(94, 163, 234);
+  cursor: pointer;
+  transition: all 100ms ease-out;
 }

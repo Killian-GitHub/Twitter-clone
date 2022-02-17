@@ -25,6 +25,7 @@
   border-radius: 30px;
   color: white;
   cursor: pointer;
+  display: block;
   font-size: 18px;
   font-weight: 800;
   height: 54px;
@@ -35,4 +36,25 @@
 .sidebar__button:hover {
   background-color: rgb(66, 138, 210);
   transition: 100ms ease-out;
+}
+
+@media screen and (max-width: 1275px) {
+  .sidebar {
+    width: max-content;
+  }
+  .sidebar__button {
+    margin: 15px auto;
+    padding: 14px 17px;
+    height: max-content;
+    width: max-content;
+  }
+  .sidebar__button__large {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1275px) {
+  .sidebar__button__small {
+    display: none !important;
+  }
 }

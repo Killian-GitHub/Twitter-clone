@@ -9,32 +9,35 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
 import './style.css'
 
 function Widgets() {
+  const [searchActive, setSearchActive] = React.useState(false)
   return (
     <div className="widgets">
       <div className="widgets__input">
         <SearchIcon className="widgets__input__searchIcon" />
         <input
+          onFocus={(e) => setSearchActive(true)}
           className="widgets__input__input"
           placeholder="Search Twitter"
           type="text"
         />
-        <CancelIcon className="widgets__input__cancelIcon" />
+        {searchActive && (
+          <CancelIcon
+            onClick={(e) => setSearchActive(false)}
+            className="widgets__input__cancelIcon"
+          />
+        )}
       </div>
       <div className="widgets__trends">
         <div className="widgets__trends__header">
           <h2 className="widgets__trends__header__title">Trends for you</h2>
-          <a href="/">
-            <SettingsIcon className="widgets__trends__header__icon" />
-          </a>
+          <SettingsIcon className="widgets__trends__header__icon" />
         </div>
-        <Trends category="Football" title="Ronaldo" tweets="160K" />
-        <Trends category="Football" title="Ronaldo" tweets="160K" />
-        <Trends category="Football" title="Ronaldo" tweets="160K" />
-        <Trends category="Football" title="Ronaldo" tweets="160K" />
-        <Trends category="Football" title="Ronaldo" tweets="160K" />
-        <a href="/" className="widgets__trends__more">
-          Show more
-        </a>
+        <Trends category="Education" title="OpenClassrooms" tweets="150K" />
+        <Trends category="Technology" title="React" tweets="16K" />
+        <Trends category="Technology" title="Vue.js" tweets="10K" />
+        <Trends category="Technology" title="WordPress" tweets="19K" />
+        <Trends category="Technology" title="Node.js" tweets="8K" />
+        <div className="widgets__trends__more">Show more</div>
       </div>
       <div className="widgets__footer">
         <ul className="widgets__footer__links">
@@ -60,7 +63,7 @@ function Widgets() {
             </a>
           </li>
         </ul>
-        <p className="widgets__footer__copyright">© 2022 Twitter, Inc.</p>
+        <p className="widgets__footer__copyright">© 2022 Twitter clone.</p>
       </div>
     </div>
   )
